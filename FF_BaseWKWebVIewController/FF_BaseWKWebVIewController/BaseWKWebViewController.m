@@ -24,8 +24,14 @@
 -(void)dealloc{
     [self.webView removeObserver:self forKeyPath:@"title"];
     [self.webView removeObserver:self forKeyPath:@"estimatedProgress"];
+    
+    //代理必须要释放 不然可能崩溃
     [self.webView setNavigationDelegate:nil];
     [self.webView setUIDelegate:nil];
+    
+    if (self.scrollHiddenNavBar) {
+        self.webView.scrollView.delegate = nil;
+    }
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -36,11 +42,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    ///这句话一定要写上 scrollHiddenNavBar设置才有效果
+    self.automaticallyAdjustsScrollViewInsets = NO;
+
     
     self.navigationItem.title = self.webTitle;
     
     /// 清理webView缓存
-    //[self clearWbCache];
+    [self clearWbCache];
     
     /// webView
     NSURL *url = [NSURL URLWithString:_urlStr];
@@ -49,6 +58,10 @@
     [self.webView loadRequest:request];
     
     [self.view addSubview:self.webView];
+    
+    [self.webView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view).insets(UIEdgeInsetsZero);
+    }];
     
     /// 进度条
     [self.navigationController.navigationBar addSubview:self.progressView];
@@ -158,6 +171,20 @@
     [self removeCachinigView];
 }
 
+///滚动 隐藏导航条 
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+
+-(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+
+
 #pragma mark - <Lazy>
 
 -(WKWebView *)webView{
@@ -177,7 +204,12 @@
         // 是使用h5的视频播放器在线播放, 还是使用原生播放器全屏播放
         config.allowsInlineMediaPlayback = YES;
         //设置视频是否需要用户手动播放  设置为NO则会允许自动播放
-        config.mediaTypesRequiringUserActionForPlayback = YES;
+        if (@available(iOS 10.0, *)) {
+            config.mediaTypesRequiringUserActionForPlayback = YES;
+        } else {
+            // Fallback on earlier versions
+            config.requiresUserActionForMediaPlayback = YES;
+        }
         //设置是否允许画中画技术 在特定设备上有效
         config.allowsPictureInPictureMediaPlayback = YES;
         
@@ -186,6 +218,17 @@
         _webView.navigationDelegate = self;
         // 是否允许手势左滑返回上一级, 类似导航控制的左滑返回
         _webView.allowsBackForwardNavigationGestures = YES;
+        
+         ///这句话一定要写上 scrollHiddenNavBar设置才有效果
+        if (self.scrollHiddenNavBar) {
+            _webView.scrollView.delegate = self;
+            if (@available(iOS 11.0, *)) {
+                _webView.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+            } else {
+                // Fallback on earlier versions
+                self.automaticallyAdjustsScrollViewInsets = NO;
+            }
+        }
     }
     return _webView;
 }
@@ -202,6 +245,7 @@
     }
     return _progressView;
 }
+
 
 /*
 #pragma mark - Navigation
