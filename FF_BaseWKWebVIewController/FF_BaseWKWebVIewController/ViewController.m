@@ -38,6 +38,7 @@
     BaseWKWebViewController *web = [[BaseWKWebViewController alloc] init];
     web.urlStr = urlStr;
     web.webTitle = title;
+    web.scrollHiddenNavBar = YES;   //滚动时隐藏导航条
     [self.navigationController pushViewController:web animated:YES];
 }
 
