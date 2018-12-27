@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0404D4BF21D4BE40006C1A83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404D4BE21D4BE40006C1A83 /* AppDelegate.m */; };
+		0404D4C221D4BE40006C1A83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404D4C121D4BE40006C1A83 /* ViewController.m */; };
+		0404D4C521D4BE40006C1A83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0404D4C321D4BE40006C1A83 /* Main.storyboard */; };
+		0404D4C721D4BE41006C1A83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0404D4C621D4BE41006C1A83 /* Assets.xcassets */; };
+		0404D4CA21D4BE41006C1A83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0404D4C821D4BE41006C1A83 /* LaunchScreen.storyboard */; };
+		0404D4CD21D4BE41006C1A83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404D4CC21D4BE41006C1A83 /* main.m */; };
+		0404D4F121D4BE60006C1A83 /* BaseWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404D4F021D4BE60006C1A83 /* BaseWKWebViewController.m */; };
+		0404D4F421D4BEC6006C1A83 /* MyInfoCachingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404D4F321D4BEC6006C1A83 /* MyInfoCachingView.m */; };
+		1AC3B38AF92F37EBD940F9EF /* libPods-FF_BaseWKWebVIewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5A9B3C3CD3BBE48A45928B5 /* libPods-FF_BaseWKWebVIewController.a */; };
+		2DF0898AF5A9D1049B8554CB /* libPods-FF_BaseWKWebVIewControllerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 541D1733982A85649EDB2C24 /* libPods-FF_BaseWKWebVIewControllerUITests.a */; };
+		EC6C5FCD504804B08302932E /* libPods-FF_BaseWKWebVIewControllerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C66629B6943AC9F8B191C7 /* libPods-FF_BaseWKWebVIewControllerTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0404D4D321D4BE41006C1A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0404D4B221D4BE40006C1A83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0404D4B921D4BE40006C1A83;
+			remoteInfo = FF_BaseWKWebVIewController;
+		};
+		0404D4DE21D4BE41006C1A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0404D4B221D4BE40006C1A83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0404D4B921D4BE40006C1A83;
+			remoteInfo = FF_BaseWKWebVIewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00EEDBDF567936327C483F9B /* Pods-FF_BaseWKWebVIewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_BaseWKWebVIewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FF_BaseWKWebVIewController/Pods-FF_BaseWKWebVIewController.debug.xcconfig"; sourceTree = "<group>"; };
+		0404D4BA21D4BE40006C1A83 /* FF_BaseWKWebVIewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FF_BaseWKWebVIewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0404D4BD21D4BE40006C1A83 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0404D4BE21D4BE40006C1A83 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0404D4C021D4BE40006C1A83 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0404D4C121D4BE40006C1A83 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0404D4C421D4BE40006C1A83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0404D4C621D4BE41006C1A83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0404D4C921D4BE41006C1A83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0404D4CB21D4BE41006C1A83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0404D4CC21D4BE41006C1A83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0404D4D221D4BE41006C1A83 /* FF_BaseWKWebVIewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FF_BaseWKWebVIewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0404D4DD21D4BE41006C1A83 /* FF_BaseWKWebVIewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FF_BaseWKWebVIewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0404D4EF21D4BE60006C1A83 /* BaseWKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseWKWebViewController.h; sourceTree = "<group>"; };
+		0404D4F021D4BE60006C1A83 /* BaseWKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseWKWebViewController.m; sourceTree = "<group>"; };
+		0404D4F221D4BEC6006C1A83 /* MyInfoCachingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInfoCachingView.h; sourceTree = "<group>"; };
+		0404D4F321D4BEC6006C1A83 /* MyInfoCachingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInfoCachingView.m; sourceTree = "<group>"; };
+		1FEBF8B23581B78F347CC3EA /* Pods-FF_BaseWKWebVIewControllerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_BaseWKWebVIewControllerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FF_BaseWKWebVIewControllerUITests/Pods-FF_BaseWKWebVIewControllerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		37A3849C247DD823F490D67B /* Pods-FF_BaseWKWebVIewControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_BaseWKWebVIewControllerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FF_BaseWKWebVIewControllerTests/Pods-FF_BaseWKWebVIewControllerTests.release.xcconfig"; sourceTree = "<group>"; };
+		541D1733982A85649EDB2C24 /* libPods-FF_BaseWKWebVIewControllerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FF_BaseWKWebVIewControllerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5838072E8230EEB4F03AC947 /* Pods-FF_BaseWKWebVIewControllerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_BaseWKWebVIewControllerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FF_BaseWKWebVIewControllerUITests/Pods-FF_BaseWKWebVIewControllerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B7B35E88861A37446866F622 /* Pods-FF_BaseWKWebVIewControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_BaseWKWebVIewControllerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FF_BaseWKWebVIewControllerTests/Pods-FF_BaseWKWebVIewControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D4C66629B6943AC9F8B191C7 /* libPods-FF_BaseWKWebVIewControllerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FF_BaseWKWebVIewControllerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5A9B3C3CD3BBE48A45928B5 /* libPods-FF_BaseWKWebVIewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FF_BaseWKWebVIewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9C2468F8ECAD388189AC52B /* Pods-FF_BaseWKWebVIewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_BaseWKWebVIewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-FF_BaseWKWebVIewController/Pods-FF_BaseWKWebVIewController.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0404D4B721D4BE40006C1A83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AC3B38AF92F37EBD940F9EF /* libPods-FF_BaseWKWebVIewController.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0404D4CF21D4BE41006C1A83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6C5FCD504804B08302932E /* libPods-FF_BaseWKWebVIewControllerTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0404D4DA21D4BE41006C1A83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DF0898AF5A9D1049B8554CB /* libPods-FF_BaseWKWebVIewControllerUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01E666FABF12CF169BEF5C93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5A9B3C3CD3BBE48A45928B5 /* libPods-FF_BaseWKWebVIewController.a */,
+				D4C66629B6943AC9F8B191C7 /* libPods-FF_BaseWKWebVIewControllerTests.a */,
+				541D1733982A85649EDB2C24 /* libPods-FF_BaseWKWebVIewControllerUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0404D4B121D4BE40006C1A83 = {
+			isa = PBXGroup;
+			children = (
+				0404D4BC21D4BE40006C1A83 /* FF_BaseWKWebVIewController */,
+				0404D4BB21D4BE40006C1A83 /* Products */,
+				632709E3F13C1D4451A7B0A7 /* Pods */,
+				01E666FABF12CF169BEF5C93 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0404D4BB21D4BE40006C1A83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0404D4BA21D4BE40006C1A83 /* FF_BaseWKWebVIewController.app */,
+				0404D4D221D4BE41006C1A83 /* FF_BaseWKWebVIewControllerTests.xctest */,
+				0404D4DD21D4BE41006C1A83 /* FF_BaseWKWebVIewControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0404D4BC21D4BE40006C1A83 /* FF_BaseWKWebVIewController */ = {
+			isa = PBXGroup;
+			children = (
+				0404D4BD21D4BE40006C1A83 /* AppDelegate.h */,
+				0404D4BE21D4BE40006C1A83 /* AppDelegate.m */,
+				0404D4C021D4BE40006C1A83 /* ViewController.h */,
+				0404D4C121D4BE40006C1A83 /* ViewController.m */,
+				0404D4F221D4BEC6006C1A83 /* MyInfoCachingView.h */,
+				0404D4F321D4BEC6006C1A83 /* MyInfoCachingView.m */,
+				0404D4EF21D4BE60006C1A83 /* BaseWKWebViewController.h */,
+				0404D4F021D4BE60006C1A83 /* BaseWKWebViewController.m */,
+				0404D4C321D4BE40006C1A83 /* Main.storyboard */,
+				0404D4C621D4BE41006C1A83 /* Assets.xcassets */,
+				0404D4C821D4BE41006C1A83 /* LaunchScreen.storyboard */,
+				0404D4CB21D4BE41006C1A83 /* Info.plist */,
+				0404D4CC21D4BE41006C1A83 /* main.m */,
+			);
+			path = FF_BaseWKWebVIewController;
+			sourceTree = "<group>";
+		};
+		632709E3F13C1D4451A7B0A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00EEDBDF567936327C483F9B /* Pods-FF_BaseWKWebVIewController.debug.xcconfig */,
+				F9C2468F8ECAD388189AC52B /* Pods-FF_BaseWKWebVIewController.release.xcconfig */,
+				B7B35E88861A37446866F622 /* Pods-FF_BaseWKWebVIewControllerTests.debug.xcconfig */,
+				37A3849C247DD823F490D67B /* Pods-FF_BaseWKWebVIewControllerTests.release.xcconfig */,
+				1FEBF8B23581B78F347CC3EA /* Pods-FF_BaseWKWebVIewControllerUITests.debug.xcconfig */,
+				5838072E8230EEB4F03AC947 /* Pods-FF_BaseWKWebVIewControllerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0404D4B921D4BE40006C1A83 /* FF_BaseWKWebVIewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0404D4E621D4BE41006C1A83 /* Build configuration list for PBXNativeTarget "FF_BaseWKWebVIewController" */;
+			buildPhases = (
+				2D5F8457D819AA8804CFB98D /* [CP] Check Pods Manifest.lock */,
+				0404D4B621D4BE40006C1A83 /* Sources */,
+				0404D4B721D4BE40006C1A83 /* Frameworks */,
+				0404D4B821D4BE40006C1A83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FF_BaseWKWebVIewController;
+			productName = FF_BaseWKWebVIewController;
+			productReference = 0404D4BA21D4BE40006C1A83 /* FF_BaseWKWebVIewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0404D4D121D4BE41006C1A83 /* FF_BaseWKWebVIewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0404D4E921D4BE41006C1A83 /* Build configuration list for PBXNativeTarget "FF_BaseWKWebVIewControllerTests" */;
+			buildPhases = (
+				9D52E0AFFE73EEBD77D788BD /* [CP] Check Pods Manifest.lock */,
+				0404D4CE21D4BE41006C1A83 /* Sources */,
+				0404D4CF21D4BE41006C1A83 /* Frameworks */,
+				0404D4D021D4BE41006C1A83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0404D4D421D4BE41006C1A83 /* PBXTargetDependency */,
+			);
+			name = FF_BaseWKWebVIewControllerTests;
+			productName = FF_BaseWKWebVIewControllerTests;
+			productReference = 0404D4D221D4BE41006C1A83 /* FF_BaseWKWebVIewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0404D4DC21D4BE41006C1A83 /* FF_BaseWKWebVIewControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0404D4EC21D4BE41006C1A83 /* Build configuration list for PBXNativeTarget "FF_BaseWKWebVIewControllerUITests" */;
+			buildPhases = (
+				D02751EED4BCC57B9524FF0F /* [CP] Check Pods Manifest.lock */,
+				0404D4D921D4BE41006C1A83 /* Sources */,
+				0404D4DA21D4BE41006C1A83 /* Frameworks */,
+				0404D4DB21D4BE41006C1A83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0404D4DF21D4BE41006C1A83 /* PBXTargetDependency */,
+			);
+			name = FF_BaseWKWebVIewControllerUITests;
+			productName = FF_BaseWKWebVIewControllerUITests;
+			productReference = 0404D4DD21D4BE41006C1A83 /* FF_BaseWKWebVIewControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0404D4B221D4BE40006C1A83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = healifeGroup;
+				TargetAttributes = {
+					0404D4B921D4BE40006C1A83 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					0404D4D121D4BE41006C1A83 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0404D4B921D4BE40006C1A83;
+					};
+					0404D4DC21D4BE41006C1A83 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0404D4B921D4BE40006C1A83;
+					};
+				};
+			};
+			buildConfigurationList = 0404D4B521D4BE40006C1A83 /* Build configuration list for PBXProject "FF_BaseWKWebVIewController" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0404D4B121D4BE40006C1A83;
+			productRefGroup = 0404D4BB21D4BE40006C1A83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0404D4B921D4BE40006C1A83 /* FF_BaseWKWebVIewController */,
+				0404D4D121D4BE41006C1A83 /* FF_BaseWKWebVIewControllerTests */,
+				0404D4DC21D4BE41006C1A83 /* FF_BaseWKWebVIewControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0404D4B821D4BE40006C1A83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0404D4CA21D4BE41006C1A83 /* LaunchScreen.storyboard in Resources */,
+				0404D4C721D4BE41006C1A83 /* Assets.xcassets in Resources */,
+				0404D4C521D4BE40006C1A83 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0404D4D021D4BE41006C1A83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0404D4DB21D4BE41006C1A83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D5F8457D819AA8804CFB98D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FF_BaseWKWebVIewController-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D52E0AFFE73EEBD77D788BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FF_BaseWKWebVIewControllerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D02751EED4BCC57B9524FF0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FF_BaseWKWebVIewControllerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0404D4B621D4BE40006C1A83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0404D4C221D4BE40006C1A83 /* ViewController.m in Sources */,
+				0404D4F421D4BEC6006C1A83 /* MyInfoCachingView.m in Sources */,
+				0404D4CD21D4BE41006C1A83 /* main.m in Sources */,
+				0404D4F121D4BE60006C1A83 /* BaseWKWebViewController.m in Sources */,
+				0404D4BF21D4BE40006C1A83 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0404D4CE21D4BE41006C1A83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0404D4D921D4BE41006C1A83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0404D4D421D4BE41006C1A83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0404D4B921D4BE40006C1A83 /* FF_BaseWKWebVIewController */;
+			targetProxy = 0404D4D321D4BE41006C1A83 /* PBXContainerItemProxy */;
+		};
+		0404D4DF21D4BE41006C1A83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0404D4B921D4BE40006C1A83 /* FF_BaseWKWebVIewController */;
+			targetProxy = 0404D4DE21D4BE41006C1A83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0404D4C321D4BE40006C1A83 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0404D4C421D4BE40006C1A83 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0404D4C821D4BE41006C1A83 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0404D4C921D4BE41006C1A83 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0404D4E421D4BE41006C1A83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0404D4E521D4BE41006C1A83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0404D4E721D4BE41006C1A83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00EEDBDF567936327C483F9B /* Pods-FF_BaseWKWebVIewController.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FF_BaseWKWebVIewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "healifeGroup.FF-BaseWKWebVIewController";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0404D4E821D4BE41006C1A83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9C2468F8ECAD388189AC52B /* Pods-FF_BaseWKWebVIewController.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FF_BaseWKWebVIewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "healifeGroup.FF-BaseWKWebVIewController";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0404D4EA21D4BE41006C1A83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7B35E88861A37446866F622 /* Pods-FF_BaseWKWebVIewControllerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FF_BaseWKWebVIewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "healifeGroup.FF-BaseWKWebVIewControllerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FF_BaseWKWebVIewController.app/FF_BaseWKWebVIewController";
+			};
+			name = Debug;
+		};
+		0404D4EB21D4BE41006C1A83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37A3849C247DD823F490D67B /* Pods-FF_BaseWKWebVIewControllerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FF_BaseWKWebVIewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "healifeGroup.FF-BaseWKWebVIewControllerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FF_BaseWKWebVIewController.app/FF_BaseWKWebVIewController";
+			};
+			name = Release;
+		};
+		0404D4ED21D4BE41006C1A83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FEBF8B23581B78F347CC3EA /* Pods-FF_BaseWKWebVIewControllerUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FF_BaseWKWebVIewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "healifeGroup.FF-BaseWKWebVIewControllerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FF_BaseWKWebVIewController;
+			};
+			name = Debug;
+		};
+		0404D4EE21D4BE41006C1A83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5838072E8230EEB4F03AC947 /* Pods-FF_BaseWKWebVIewControllerUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FF_BaseWKWebVIewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "healifeGroup.FF-BaseWKWebVIewControllerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FF_BaseWKWebVIewController;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0404D4B521D4BE40006C1A83 /* Build configuration list for PBXProject "FF_BaseWKWebVIewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0404D4E421D4BE41006C1A83 /* Debug */,
+				0404D4E521D4BE41006C1A83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0404D4E621D4BE41006C1A83 /* Build configuration list for PBXNativeTarget "FF_BaseWKWebVIewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0404D4E721D4BE41006C1A83 /* Debug */,
+				0404D4E821D4BE41006C1A83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0404D4E921D4BE41006C1A83 /* Build configuration list for PBXNativeTarget "FF_BaseWKWebVIewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0404D4EA21D4BE41006C1A83 /* Debug */,
+				0404D4EB21D4BE41006C1A83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0404D4EC21D4BE41006C1A83 /* Build configuration list for PBXNativeTarget "FF_BaseWKWebVIewControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0404D4ED21D4BE41006C1A83 /* Debug */,
+				0404D4EE21D4BE41006C1A83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0404D4B221D4BE40006C1A83 /* Project object */;
+}
