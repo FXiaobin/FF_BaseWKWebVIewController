@@ -16,6 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,copy) NSString *webTitle;
 
+///滚动webview的时候是否隐藏导航条
+@property (nonatomic,assign) BOOL scrollHiddenNavBar;
+
 -(void)goBack;
 -(void)goForward;
 -(void)reload;
