@@ -16,7 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,copy) NSString *webTitle;
 
-
+-(void)goBack;
+-(void)goForward;
+-(void)reload;
 
 @end
 
