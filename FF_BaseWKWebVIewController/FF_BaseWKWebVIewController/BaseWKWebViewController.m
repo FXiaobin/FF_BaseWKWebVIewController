@@ -10,7 +10,7 @@
 #import <WebKit/WebKit.h>
 #import "MyInfoCachingView.h"
 
-@interface BaseWKWebViewController ()<WKUIDelegate,WKNavigationDelegate>
+@interface BaseWKWebViewController ()<WKUIDelegate,WKNavigationDelegate,UIScrollViewDelegate>
 
 
 @property (nonatomic,strong) WKWebView *webView;
