@@ -39,6 +39,22 @@
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
+//也可以不用webView的scrollView的delegate 直接用系统的方法来实现这个效果
+// -(void)viewWillAppear:(BOOL)animated{
+//     [super viewWillAppear:animated];
+//     [self.navigationController setNavigationBarHidden:NO animated:YES];
+    
+//     self.navigationController.hidesBarsOnSwipe = YES;
+//     self.navigationController.hidesBarsOnTap = YES;
+// }
+
+// -(void)viewWillDisappear:(BOOL)animated{
+//     [super viewWillDisappear:animated];
+    
+//     self.navigationController.hidesBarsOnSwipe = NO;
+//     self.navigationController.hidesBarsOnTap = NO;
+// }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
